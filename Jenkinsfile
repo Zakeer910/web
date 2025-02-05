@@ -50,7 +50,7 @@ pipeline {
         }
         stage('Run a container'){
             steps{
-                sh 'docker run -it -d --name zakir -p 8081:8080 zakeer910/project2
+                sh 'docker run -it -d --name zakir -p 8081:8080 zakeer910/project2'
             }
         }
     }
