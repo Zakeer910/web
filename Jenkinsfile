@@ -28,7 +28,7 @@ pipeline {
             }
         }
         stage('Assign tag'){
-            steps{
+            steps{ 
                 sh 'docker tag app zakeer910/project2'
             }
         }
@@ -46,13 +46,11 @@ pipeline {
         stage('Pull image from DockerHub'){
             steps{
                 sh 'docker pull zakeer910/project2'
-'
             }
         }
         stage('Run a container'){
             steps{
                 sh 'docker run -it -d --name zakir -p 8081:8080 zakeer910/project2
-'
             }
         }
     }
