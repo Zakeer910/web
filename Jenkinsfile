@@ -45,7 +45,7 @@ pipeline {
         }
         stage('Pull image from DockerHub'){
             steps{
-                sh 'docker pull zakeer910/project2
+                sh 'docker pull zakeer910/project2'
 '
             }
         }
